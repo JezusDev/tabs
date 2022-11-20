@@ -17,19 +17,19 @@
   @include flex($fd: row, $jc: space-around, $ai: flex-start);
   gap: 80px;
 
+  h2 {
+    margin-top: 0px;
+  }
+
   &__block {
     padding: 20px;
     background-color: $c-white;
     border-radius: 10px;
     margin-bottom: 30px;
 
-    img {
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-
-    h4{
+    h4 {
       margin-top: -10px;
+      margin-bottom: -16px;
       padding-bottom: 10px;
       border-bottom: 1px solid $c-brand;
     }
@@ -50,8 +50,35 @@
   &__stat {
     margin-bottom: 6px;
 
-    &--grey{ 
-    color: $c-grey;
+    &--grey {
+      color: $c-grey;
     }
   }
+
+  &__name {
+    margin-left: 10px;
+  }
+
+  &__rechead {
+    @include flex($ai: center)
+  }
+
+  &__content {
+    
+
+    &--profile{
+border-bottom: 1px solid $c-brand;
+    padding: 32px 0;
+    }
+  }  
+
+  &__text {
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 10px;
 }

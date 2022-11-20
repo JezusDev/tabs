@@ -1,9 +1,8 @@
 .main {
-  padding-top: 94px;
   height: 90%;
-  width: 1120px;
+  width: 990px;
   @include flex($ai: flex-start, $jc: center);
-  margin: auto;
+  margin-bottom: 370px;
 
   &__title {
     font-size: 52px;
@@ -30,20 +29,7 @@
     @include flex($jc: center, $ai: center, $fd: column);
     gap: 16px;
     padding: 10px 36px;
-  }
-
-  &__item {
-    @include flex($jc: center, $ai: center);
-    background-color: $c-background;
-    width: 100%;
-    padding: 10px 10px;
-    border-radius: 10px;
-    border: 1px solid $c-grey;
-
-    &--blue {
-      background-color: $c-brand;
-    }
-  }
+  }  
 
   &__signup {
     text-align: center;

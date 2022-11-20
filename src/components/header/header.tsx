@@ -9,17 +9,17 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__content}>
-      <Link href="/">
-        <a className={styles.header__logo}>
-          <Logo />
-        </a>
-      </Link>
-      <div className={styles.header__menu}>
-        <Menu/>
-      </div>
-      <div className={styles.header__avatar}>
-        <Image src={Avatar} height={'32px'} width={'32px'} />
-      </div>
+        <Link href="/">
+          <a className={styles.header__logo}>
+            <Logo />
+          </a>
+        </Link>
+        <div className={styles.header__menu}>
+          <Menu />
+        </div>
+        <div className={styles.header__avatar}>
+          <Image src={Avatar} height={'32px'} width={'32px'} />
+        </div>
       </div>
     </header>
   );

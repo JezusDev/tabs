@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import Block from '../block/block';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 
@@ -10,10 +11,12 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      {children}
+      <Block first={true} mod={'md'}>
+        {children}
+      </Block>
       <Footer />
     </>
   );
 };
 
-export default Layout
+export default Layout;

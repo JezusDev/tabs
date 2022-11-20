@@ -1,6 +1,6 @@
 import Head from 'next/head';
+import ProfileBlock from '../../components/block/profile-block';
 import Layout from '../../components/layout/layout';
-import Profile from '../../components/profile/profile';
 
 const ProfilePage = () => {
   return (
@@ -9,11 +9,10 @@ const ProfilePage = () => {
         <title>Profile | KVK.com</title>
       </Head>
       <Layout>
-        <Profile />
+        <ProfileBlock />
       </Layout>
-      
     </>
-  ); 
+  );
 };
 
 export default ProfilePage;

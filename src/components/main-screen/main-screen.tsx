@@ -1,4 +1,5 @@
 import Columns from '../block/columns/columns';
+import Button from '../button/button';
 import Input from '../input/input';
 import styles from './scss/main-screen.module.scss';
 
@@ -15,10 +16,10 @@ const MainScreen = () => {
                 <Input type={'text'} placeholder={'Login'} />
                 <Input type={'password'} placeholder={'Password'} />
                 <Input type={'checkbox'} label={'Save me'} />
-                <button className={`${styles.main__item} ${styles['main__item--blue']}`}>Log In</button>
+                <Button mod="blue" content={'Log in'} />
                 <div className={styles.main__signup}>
                   <span className={styles['main__signup-text']}>Don't have an account?</span>
-                  <button className={`${styles.main__item} ${styles['main__item--blue']}`}>Sign Up</button>
+                  <Button mod="blue" content={'Sign Up'} />
                   <span className={styles['main__signup-sub']}>
                     By registering you you agree to our Terms of Service and our Privacy Policy.
                   </span>

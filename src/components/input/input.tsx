@@ -17,9 +17,7 @@ const Input = ({ type, placeholder, label, mod = 'default' }: InputProps) => {
         />
       ) : (
         <div className={styles.input__checkbox}>
-          <input            
-            type={type}            
-          />
+          <input type={type} />
           <label>{label}</label>
         </div>
       )}

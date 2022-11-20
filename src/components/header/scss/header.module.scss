@@ -5,9 +5,10 @@
   @include fixed();
   background-color: $c-white;
   color: $c-brand;
+  z-index: 100;
 
   &__content {
-    max-width: 1120px;
+    max-width: 990px;
     @include fixed();
     @include flex();
     width: 100%
