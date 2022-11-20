@@ -1,0 +1,57 @@
+.block {
+  &--first {
+    padding-top: 94px;
+  }
+  padding-top: 64px;
+  animation: fadeIn 0.3s 0.3s ease forwards;
+
+  max-width: 1120px;
+  margin: auto;
+
+  &--md {
+    max-width: 990px;
+  }
+}
+
+.profile {
+  @include flex($fd: row, $jc: space-around, $ai: flex-start);
+  gap: 80px;
+
+  &__block {
+    padding: 20px;
+    background-color: $c-white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h4{
+      margin-top: -10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $c-brand;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    text-align: left;
+    @include flex($jc: flex-end, $fd: column, $ai: flex-start);
+  }
+
+  &__tabs {
+    @include flex($jc: flex-end, $fd: row, $ai: flex-start);
+    margin-top: 10px;
+    gap: 40px;
+  }
+
+  &__stat {
+    margin-bottom: 6px;
+
+    &--grey{ 
+    color: $c-grey;
+    }
+  }
+}

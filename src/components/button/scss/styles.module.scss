@@ -1,0 +1,12 @@
+.button{
+     @include flex($jc: center, $ai: center);
+    background-color: $c-background;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid $c-grey;
+
+    &--blue {
+      background-color: $c-brand;
+    }
+}

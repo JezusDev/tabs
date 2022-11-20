@@ -1,0 +1,63 @@
+.main {
+  padding-top: 94px;
+  height: 90%;
+  width: 1120px;
+  @include flex($ai: flex-start, $jc: center);
+  margin: auto;
+
+  &__title {
+    font-size: 52px;
+  }
+
+  &__col {
+    margin-left: auto;
+  }
+
+  &__block {
+    background-color: $c-white;
+    color: black;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  &__block_title {
+    padding: 32px 0 0px 0;
+    @include flex($ai: center, $jc: center);
+  }
+
+  &__form {
+    @include flex($jc: center, $ai: center, $fd: column);
+    gap: 16px;
+    padding: 10px 36px;
+  }
+
+  &__item {
+    @include flex($jc: center, $ai: center);
+    background-color: $c-background;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid $c-grey;
+
+    &--blue {
+      background-color: $c-brand;
+    }
+  }
+
+  &__signup {
+    text-align: center;
+
+    &-text {
+      display: block;
+      padding: 6px 0px;
+    }
+
+    &-sub {
+      display: block;
+      padding: 6px 0px;
+      font-size: 12px;
+      color: $c-grey;
+    }
+  }
+}
