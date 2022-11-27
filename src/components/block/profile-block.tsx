@@ -2,7 +2,7 @@ import Columns from './columns/columns';
 import styles from './scss/block.module.scss';
 import Image from 'next/image';
 
-import Avatar from '../../resources/img/avatar.jpg';
+import Avatar from '../../resources/img/avatar1.jpg';
 import image from '../../resources/img/image.jpg';
 import Button from '../button/button';
 import moment from 'moment';
