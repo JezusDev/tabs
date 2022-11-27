@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './scss/header.module.scss';
 import Logo from '../../resources/img/logo.svg';
-import Avatar from '../../resources/img/avatar.jpg';
+import Avatar from '../../resources/img/avatar1.jpg';
 import Image from 'next/image';
 import Menu from '../menu/menu';
 
