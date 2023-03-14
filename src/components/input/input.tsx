@@ -5,26 +5,28 @@ type InputProps = {
   mod?: 'brand' | 'default';
   label?: string;
   title?: string;
-  maxLength?: number
+  maxLength?: number;
+  minLength?: number;
 };
 
-const Input = ({ type, placeholder, label, mod = 'default', title, maxLength }: InputProps) => {
+const Input = (props: InputProps) => {
   return (
     <>
-      {type !== 'checkbox' ? (
+      {props.type !== 'checkbox' ? (
         <>
-       {title ? <h3>{title}</h3>: ''} 
-        <input
-          className={`${styles.input} ${mod ? styles[`input--${mod}`] : ''}`}
-          type={type}
-            placeholder={placeholder}
-            maxLength={maxLength ? maxLength: 1000}
+          {props.title ? <h3>{props.title}</h3> : ''}
+          <input
+            className={`${styles.input} ${props.mod ? styles[`input--${props.mod}`] : ''}`}
+            type={props.type}
+            placeholder={props.placeholder}
+            maxLength={props.maxLength ? props.maxLength : 1000}
+            minLength={props.minLength ? props.minLength : 0}
           />
-          </>
+        </>
       ) : (
         <div className={styles.input__checkbox}>
-          <input type={type} />
-          <label>{label}</label>
+          <input type={props.type} />
+          <label>{props.label}</label>
         </div>
       )}
     </>

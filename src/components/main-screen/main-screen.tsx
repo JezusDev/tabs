@@ -1,9 +1,14 @@
-import Columns from '../block/columns/columns';
+import Router from 'next/router';
+import Columns from '../columns/columns';
 import Button from '../button/button';
 import Input from '../input/input';
 import styles from './scss/main-screen.module.scss';
 
 const MainScreen = () => {
+
+  const goToSignUp = ()=>{
+    Router.push('/signup')
+  }
   return (
     <>
       <div className={styles.main}>
@@ -19,7 +24,7 @@ const MainScreen = () => {
                 <Button mod="blue" content={'Log in'} />
                 <div className={styles.main__signup}>
                   <span className={styles['main__signup-text']}>Don't have an account?</span>
-                  <Button mod="blue" content={'Sign Up'} />
+                  <Button mod="blue" content={'Sign Up'} onClick={goToSignUp}/>
                   <span className={styles['main__signup-sub']}>
                     By registering you you agree to our Terms of Service and our Privacy Policy.
                   </span>
