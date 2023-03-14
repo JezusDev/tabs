@@ -11,7 +11,7 @@ const MainScreen = () => {
           left={<h1 className={styles.main__title}>Welcome to KVK.com</h1>}
           right={
             <div className={styles.main__block}>
-              <h3 className={styles.main__block_title}>Вход в KVK</h3>
+              <h3 className={styles.main__block_title}>Log In KVK</h3>
               <div className={styles.main__form}>
                 <Input type={'text'} placeholder={'Login'} />
                 <Input type={'password'} placeholder={'Password'} />
