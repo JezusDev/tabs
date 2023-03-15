@@ -3,7 +3,7 @@ import styles from './scss/styles.module.scss';
 
 type ButtonProps = {
   mod?: 'blue' | 'grey' | 'empty';
-  size?: 'wide' | 'md';
+  size?: 'wide' | 'md' | 'xs';
   content: string;
   onClick?: MouseEventHandler;
 };

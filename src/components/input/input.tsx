@@ -1,3 +1,4 @@
+import { EventHandler } from 'react';
 import styles from './scss/input.module.scss';
 type InputProps = {
   type: string;
@@ -6,7 +7,7 @@ type InputProps = {
   label?: string;
   title?: string;
   maxLength?: number;
-  minLength?: number;
+  onChange?: EventHandler<any>
 };
 
 const Input = (props: InputProps) => {
@@ -20,7 +21,7 @@ const Input = (props: InputProps) => {
             type={props.type}
             placeholder={props.placeholder}
             maxLength={props.maxLength ? props.maxLength : 1000}
-            minLength={props.minLength ? props.minLength : 0}
+            onChange={props.onChange}
           />
         </>
       ) : (

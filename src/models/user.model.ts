@@ -1,8 +1,7 @@
 export interface ILoginUser {
-  id: number;
+  id?: number;
   email: string;
   password: string;
-  userName: string;
 }
 
 export interface IUser extends ILoginUser {
@@ -10,6 +9,7 @@ export interface IUser extends ILoginUser {
   lastName: string;
   secondName?: string;
   avatar?: string;
+  userName: string;
 }
 
 export interface IUserExtended extends IUser {
