@@ -7,7 +7,9 @@ type InputProps = {
   label?: string;
   title?: string;
   maxLength?: number;
-  onChange?: EventHandler<any>
+  onChange?: EventHandler<any>;
+  value?: string;
+  disabled?: boolean;
 };
 
 const Input = (props: InputProps) => {
@@ -22,6 +24,8 @@ const Input = (props: InputProps) => {
             placeholder={props.placeholder}
             maxLength={props.maxLength ? props.maxLength : 1000}
             onChange={props.onChange}
+            disabled={props.disabled ? props.disabled : false}
+            // dangerouslySetInnerHTML={{ __html: props.value ? props.value : '' }}
           />
         </>
       ) : (

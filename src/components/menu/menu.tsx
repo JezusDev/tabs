@@ -8,7 +8,7 @@ const Menu = () => {
       {headerLabels.map((label, key) => {
         return (
           <li className={styles.menu__item}>
-            <Link href={label.link}>
+            <Link href={'/'}>
               <a>{label.title}</a>
             </Link>
           </li>

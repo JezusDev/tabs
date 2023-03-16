@@ -2,24 +2,17 @@
 export const headerLabels = [
     {
         id: 1,
-        title: 'News',
-        link: '/news',
+        title: 'Начать обмен',
     },
     {
         id: 2,
-        title: 'Messages',
-        link: '/messages',
+        title: 'Мои обмены'
     },
     {
         id: 3,
-        title: 'Profile',
-        link: '/profile',
+        title: 'Обратная связь',
     },
-    {
-        id: 4,
-        title: 'Friends',
-        link: '/friends',
-    }
+   
 ]
 
 export const COMMON_LABELS = {

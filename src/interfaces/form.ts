@@ -5,10 +5,11 @@ export type Field = {
   title?: string;
   value?: string;
   maxLength?: number;
+  disabled?: boolean;
 }
 
 export type FormFieldState = {
     name: string;
-    value: string | undefined | null;
+    value: string | undefined;
     error: string;
   };

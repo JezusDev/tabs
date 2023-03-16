@@ -30,7 +30,7 @@ class FormStore {
 
   };
 
-  setField = (name: string, value: string | null) => {
+  setField = (name: string, value: string) => {
     this.fields[name].value = value;
     this.fields[name].error = '';
   };

@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import styles from './scss/header.module.scss';
-import Logo from '../../resources/img/logo.svg';
-import Avatar from '../../resources/img/avatar1.jpg';
-import Image from 'next/image';
 import Menu from '../menu/menu';
 import { observer } from 'mobx-react';
 import { useMemo } from 'react';
@@ -26,13 +23,14 @@ const Header = observer(() => {
         </div>
         {userAuthorized ? (
           <div className={styles.header__login}>
-          <span className={styles.header__user}>{userAuthorized.userName}</span>
-          <Button size={'xs'} onClick={logout} content={'Выйти'}/>
+            <Link href={'/profile'}>
+              <a className={styles.header__user}>{userAuthorized.userName}</a>
+            </Link>
+            <Button size={'xs'} onClick={logout} content={'Выйти'} />
           </div>
-        ): (
-          <Button size={'xs'} onClick={()=>Router.push('/login')} content={'Войти'}/>
+        ) : (
+          <Button size={'xs'} onClick={() => Router.push('/login')} content={'Войти'} />
         )}
-        
       </div>
     </header>
   );

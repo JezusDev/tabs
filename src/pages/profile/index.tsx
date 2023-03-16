@@ -6,7 +6,7 @@ const ProfilePage = () => {
   return (
     <>
       <Head>
-        <title>Profile | KVK.com</title>
+        <title>Profile | Book2Book</title>
       </Head>
       <Layout>
         <ProfileBlock />

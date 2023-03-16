@@ -4,6 +4,7 @@ export const SIGN_UP_FIELDS = {
     placeholder: 'Ваше имя',
     title: 'Имя',
     require: true,
+    disabled: false
   },
   lastName: {
     type: 'text',
@@ -85,10 +86,50 @@ export const LOGIN_FIELDS = {
     type: 'text',
     placeholder: 'Электронная почта',
     require: true,
+    disabled: false
   },
   password: {
     type: 'password',
     placeholder: 'Пароль',
     require: true,
+    disabled: false
   },
+};
+
+export const USER_FIELDS = {
+  name: {
+    type: 'text',
+    placeholder: 'Ваше имя',
+    title: 'Имя',
+    require: true,
+  },
+  lastName: {
+    type: 'text',
+    placeholder: 'Ваша фамилия',
+    title: 'Фамилия',
+    require: true,
+  },
+  secondName: {
+    type: 'text',
+    placeholder: 'Ваше отчество',
+    title: 'Отчество',
+    require: false,
+  },
+  email: {
+    type: 'text',
+    placeholder: 'example@exampe.com',
+    title: 'Электронная почта',
+    require: true,
+  },
+  userName: {
+    type: 'text',
+    placeholder: 'Ваш псевдоним',
+    title: 'Псевдоним',
+    require: true,
+  },
+  createdAt: {
+    type: 'text',
+    title: 'Дата регистрации',
+    disabled: true
+  }
 };

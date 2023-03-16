@@ -25,7 +25,7 @@ const SignUp = observer(() => {
     if (result.error) {
       alert(result.error);
     } else {
-      Router.push('/');
+      Router.push('/login');
       alert(result.message);
     }
   };
